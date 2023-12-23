@@ -1,0 +1,2 @@
+JMeter is a popular open-source performance testing tool that can be used to simulate a large number of concurrent users accessing an application or service. This allows testers to identify and measure performance bottlenecks, assess the scalability of the application, and ensure that it can meet the expected demand.
+In this test suite we are testing to simulate a large number of concurrent users accessing an application or service. 
