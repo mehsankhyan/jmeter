@@ -1,0 +1,76 @@
+2023-12-15 21:54:16,942 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-12-15 21:54:17,005 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2023-12-15 21:54:17,020 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: Copyright (c) 1998-2023 The Apache Software Foundation
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: Version 5.6.2
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: java.version=21.0.1
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: os.name=Windows 10
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: os.arch=amd64
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: os.version=10.0
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: java.awt.headless=true
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-12-15 21:54:17,036 INFO o.a.j.JMeter: Available Processors =4
+2023-12-15 21:54:17,067 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-12-15 21:54:17,067 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-12-15 21:54:17,067 INFO o.a.j.JMeter: JMeterHome=C:\apache-jmeter-5.6.2\apache-jmeter-5.6.2
+2023-12-15 21:54:17,067 INFO o.a.j.JMeter: user.dir  =C:\apache-jmeter-5.6.2\apache-jmeter-5.6.2\bin
+2023-12-15 21:54:17,067 INFO o.a.j.JMeter: PWD       =C:\apache-jmeter-5.6.2\apache-jmeter-5.6.2\bin
+2023-12-15 21:54:17,067 INFO o.a.j.JMeter: IP: 172.28.96.1 Name: DESKTOP-RQ63NGD FullName: DESKTOP-RQ63NGD.mshome.net
+2023-12-15 21:54:17,130 INFO o.a.j.r.RmiUtils: System property 'java.rmi.server.hostname' is not defined, using localHost address
+2023-12-15 21:54:17,130 INFO o.a.j.r.RmiUtils: Local IP address=172.28.96.1
+2023-12-15 21:54:17,255 ERROR o.a.j.JMeter: Giving up, as server failed with:
+java.rmi.server.ExportException: Listen failed on port: 0; nested exception is: 
+	java.io.FileNotFoundException: rmi_keystore.jks (The system cannot find the file specified)
+	at sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:358) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:251) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415) ~[?:?]
+	at sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147) ~[?:?]
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235) ~[?:?]
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:473) ~[?:?]
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:384) ~[?:?]
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:257) ~[?:?]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.<init>(RemoteJMeterEngineImpl.java:68) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.startServer(RemoteJMeterEngineImpl.java:74) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.JMeter.start(JMeter.java:464) [ApacheJMeter_core.jar:5.6.2]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.2]
+Caused by: java.io.FileNotFoundException: rmi_keystore.jks (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.loadStore(SSLRMIServerSocketFactory.java:147) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.createServerSocket(SSLRMIServerSocketFactory.java:99) ~[ApacheJMeter_core.jar:5.6.2]
+	at sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:672) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:344) ~[?:?]
+	... 13 more
+2023-12-15 21:54:17,286 ERROR o.a.j.JMeter: An error occurred: 
+java.rmi.server.ExportException: Listen failed on port: 0; nested exception is: 
+	java.io.FileNotFoundException: rmi_keystore.jks (The system cannot find the file specified)
+	at sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:358) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.exportObject(TCPTransport.java:251) ~[?:?]
+	at sun.rmi.transport.tcp.TCPEndpoint.exportObject(TCPEndpoint.java:415) ~[?:?]
+	at sun.rmi.transport.LiveRef.exportObject(LiveRef.java:147) ~[?:?]
+	at sun.rmi.server.UnicastServerRef.exportObject(UnicastServerRef.java:235) ~[?:?]
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:473) ~[?:?]
+	at java.rmi.server.UnicastRemoteObject.exportObject(UnicastRemoteObject.java:384) ~[?:?]
+	at java.rmi.server.UnicastRemoteObject.<init>(UnicastRemoteObject.java:257) ~[?:?]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.<init>(RemoteJMeterEngineImpl.java:68) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.startServer(RemoteJMeterEngineImpl.java:74) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.JMeter.start(JMeter.java:464) [ApacheJMeter_core.jar:5.6.2]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.2]
+Caused by: java.io.FileNotFoundException: rmi_keystore.jks (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.loadStore(SSLRMIServerSocketFactory.java:147) ~[ApacheJMeter_core.jar:5.6.2]
+	at org.apache.jmeter.rmi.SSLRMIServerSocketFactory.createServerSocket(SSLRMIServerSocketFactory.java:99) ~[ApacheJMeter_core.jar:5.6.2]
+	at sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(TCPEndpoint.java:672) ~[?:?]
+	at sun.rmi.transport.tcp.TCPTransport.listen(TCPTransport.java:344) ~[?:?]
+	... 13 more
